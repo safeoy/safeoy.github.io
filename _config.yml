@@ -3,17 +3,19 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: Hexo
+title: 觉非私塾
 subtitle:
 description:
 keywords:
-author: John Doe
+author: safeoy
 language:
+  - zh-cn
+  - en
 timezone:
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: http://yoursite.com
+url: http://blog.duioy.com
 root: /
 permalink: :year/:month/:day/:title/
 permalink_defaults:
