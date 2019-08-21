@@ -1,0 +1,23 @@
+language: node_js
+
+node_js: stable
+
+install:
+  - npm install
+
+script:
+  - hexo clean
+  - hexo generate
+
+after_script:
+  - cd ./public
+  - git init
+  - git config user.name "safeoy"
+  - git config user.email "safeoy@gmail.com"
+  - git add .
+  - git commit -m "Deploy blog pages"
+  - git push --force --quiet "https://${GH_TOKEN}@github.com/safeoy/safeoy.github.io" master:master
+
+branches:
+  only:
+    - blog
